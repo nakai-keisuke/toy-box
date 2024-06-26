@@ -1,0 +1,27 @@
+.soda {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border: 1px solid black;
+  writing-mode: vertical-lr;
+}
+
+.bubble {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 100%;
+  animation: bubble-animation 0.8s ease infinite;
+}
+
+@keyframes bubble-animation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
